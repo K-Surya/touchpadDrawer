@@ -3,7 +3,7 @@ import queue
 import turtle
 from evdev import InputDevice, ecodes
 
-# 🔹 Replace with your touchpad device
+#Touch pad device..
 TOUCHPAD_PATH = "/dev/input/event" + input("Enter the touchpad IO number : ")
 
 event_queue = queue.Queue()
