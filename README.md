@@ -10,6 +10,7 @@ It is a simple python project that draws what you draw on the touch pad on a can
 2. To find the device id run the findId.py program to list out all the input devices.
 3. It is in the format "/dev/input/eventx" where x is a number and is referred as device ID here.
 4. Once the device ID is known, run the main.py file and enter the device ID (The number x).
+5. The main.py file has to be run as root as as 'sudo python main.py' for it to gain access to the touchpad data.
 
 # Operation Instruction
 1. Have fun drawing stuff on the touchpad.
