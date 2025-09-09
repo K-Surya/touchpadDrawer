@@ -3,8 +3,10 @@ import queue
 import turtle
 from evdev import InputDevice, ecodes
 
+import findId
+
 #Touch pad device..
-TOUCHPAD_PATH = "/dev/input/event" + input("Enter the touchpad IO number : ")
+TOUCHPAD_PATH = findId.findTouchpad()
 
 event_queue = queue.Queue()
 drawing = False  # whether we are currently drawing (finger down)
